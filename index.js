@@ -59,8 +59,8 @@ async function run() {
             const result = await cartsCollection.deleteOne(query)
             res.json(result)
         })
-        await client.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
+        // await client.db("admin").command({ ping: 1 });
+        // console.log("Pinged your deployment. You successfully connected to MongoDB!");
     } finally {
 
     }
